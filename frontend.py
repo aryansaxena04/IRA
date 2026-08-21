@@ -25,7 +25,7 @@ if sys.platform == "win32":
 # 1. PAGE CONFIG & STAGING DIRECTORY
 # ==========================================
 st.set_page_config(page_title="Agentic Orchestrator", page_icon="🧠", layout="wide")
-st.title("🧠 Multi-Agent MCP Orchestrator")
+st.title("🧠 IRA Multi-Agent MCP Orchestrator")
 
 UPLOAD_DIR = Path("./staging_vault")
 UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
@@ -34,7 +34,7 @@ UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 # 2. SESSION STATE — MUST BE BEFORE SIDEBAR
 # ==========================================
 welcome_text = """
-👋 **Welcome to your Agentic Orchestrator!**
+👋 **Welcome to your IRA Agentic Orchestrator!**
 
 To bring your AI agents online, you need to provide your API keys in the sidebar. If you don't have them yet, you can generate them for free using the official developer consoles below:
 
@@ -45,6 +45,8 @@ To bring your AI agents online, you need to provide your API keys in the sidebar
 * **Notion (Workspace Integration):** [Notion Integrations](https://www.notion.so/my-integrations)
 
 Once your Gemini key is entered, the chat interface will unlock. 🚀
+
+Developed by Aryan Saxena
 """
 
 if "user_thread_id" not in st.session_state:
